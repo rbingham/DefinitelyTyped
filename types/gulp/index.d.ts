@@ -136,18 +136,18 @@ declare namespace gulp {
          * each waiting for the prior to finish. If an error occurs, execution will stop.
          * @param tasks, string, function or array of both.
          */
-        (...tasks: string[]): NodeJS.EventEmitter;
+        (...tasks: string[]): Orchestrator.AddMethodCallback|Function;
 
-        (...tasks: Function[]): NodeJS.EventEmitter;
+        (...tasks: Function[]): Orchestrator.AddMethodCallback|Function;
 
-        (task: string|string[], ...fn: Function[]): NodeJS.EventEmitter;
+        (task: string|string[], ...fn: Function[]): Orchestrator.AddMethodCallback|Function;
 
         //TODO: TypeScript cannot express varargs followed by callback as a last argument...
-        (task1: Strings, task2: Strings, cb?: (error?: any) => any): Function;
-        (task1: Strings, task2: Strings, task3: Strings, cb?: (error?: any) => any): NodeJS.EventEmitter;
-        (task1: Strings, task2: Strings, task3: Strings, task4: Strings, cb?: (error?: any) => any): NodeJS.EventEmitter;
-        (task1: Strings, task2: Strings, task3: Strings, task4: Strings, task5: Strings, cb?: (error?: any) => any): NodeJS.EventEmitter;
-        (task1: Strings, task2: Strings, task3: Strings, task4: Strings, task5: Strings, task6: Strings, cb?: (error?: any) => any): NodeJS.EventEmitter;
+        (task1: Strings, task2: Strings, cb?: (error?: any) => any): AddMethodCallback|Function;
+        (task1: Strings, task2: Strings, task3: Strings, cb?: (error?: any) => any): Orchestrator.AddMethodCallback|Function;
+        (task1: Strings, task2: Strings, task3: Strings, task4: Strings, cb?: (error?: any) => any): Orchestrator.AddMethodCallback|Function;
+        (task1: Strings, task2: Strings, task3: Strings, task4: Strings, task5: Strings, cb?: (error?: any) => any): Orchestrator.AddMethodCallback|Function;
+        (task1: Strings, task2: Strings, task3: Strings, task4: Strings, task5: Strings, task6: Strings, cb?: (error?: any) => any): Orchestrator.AddMethodCallback|Function;
 
     }
 
@@ -159,18 +159,18 @@ declare namespace gulp {
          * all being executed at the same time. If an error occurs, all execution will complete.
          * @param tasks, string, function or array of both.
          */
-        (...tasks: string[]): NodeJS.EventEmitter;
+        (...tasks: string[]): Orchestrator.AddMethodCallback|Function;
 
-        (...tasks: Function[]): NodeJS.EventEmitter;
+        (...tasks: Function[]): Orchestrator.AddMethodCallback|Function;
 
-        (task: string|string[], ...fn: Function[]): NodeJS.EventEmitter;
+        (task: string|string[], ...fn: Function[]): Orchestrator.AddMethodCallback|Function;
 
         //TODO: TypeScript cannot express varargs followed by callback as a last argument...
-        (task1: Strings, task2: Strings, cb?: (error?: any) => any): Function;
-        (task1: Strings, task2: Strings, task3: Strings, cb?: (error?: any) => any): NodeJS.EventEmitter;
-        (task1: Strings, task2: Strings, task3: Strings, task4: Strings, cb?: (error?: any) => any): NodeJS.EventEmitter;
-        (task1: Strings, task2: Strings, task3: Strings, task4: Strings, task5: Strings, cb?: (error?: any) => any): NodeJS.EventEmitter;
-        (task1: Strings, task2: Strings, task3: Strings, task4: Strings, task5: Strings, task6: Strings, cb?: (error?: any) => any): NodeJS.EventEmitter;
+        (task1: Strings, task2: Strings, cb?: (error?: any) => any): Orchestrator.AddMethodCallback|Function;
+        (task1: Strings, task2: Strings, task3: Strings, cb?: (error?: any) => any): Orchestrator.AddMethodCallback|Function;
+        (task1: Strings, task2: Strings, task3: Strings, task4: Strings, cb?: (error?: any) => any): Orchestrator.AddMethodCallback|Function;
+        (task1: Strings, task2: Strings, task3: Strings, task4: Strings, task5: Strings, cb?: (error?: any) => any): Orchestrator.AddMethodCallback|Function;
+        (task1: Strings, task2: Strings, task3: Strings, task4: Strings, task5: Strings, task6: Strings, cb?: (error?: any) => any): Orchestrator.AddMethodCallback|Function;
 
     }
 
